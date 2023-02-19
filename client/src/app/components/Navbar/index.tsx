@@ -18,7 +18,7 @@ const NavbarContainer = styled.div`
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <NavbarContainer>Hello from Navbar</NavbarContainer>
   )
 }
 
