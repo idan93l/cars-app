@@ -20,11 +20,13 @@ const NavbarContainer = styled.div`
 const LogoContainer = styled.div``;
 
 function Navbar() {
-  return <NavbarContainer>
-    <LogoContainer>
-      <Logo />
-    </LogoContainer>
-  </NavbarContainer>;
+  return (
+    <NavbarContainer>
+      <LogoContainer>
+        <Logo />
+      </LogoContainer>
+    </NavbarContainer>
+  );
 }
 
 export default Navbar;
