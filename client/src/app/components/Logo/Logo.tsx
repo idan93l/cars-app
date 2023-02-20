@@ -27,10 +27,17 @@ const Image = styled.div`
     width: auto;
     height: 100%;
   }
-`
+`;
 
 function Logo() {
-  return <div>Logo</div>;
+  return (
+    <LogoContainer>
+      <Image>
+        <img src={CarLogoImg} alt="Car" />
+        <LogoText>CarRent</LogoText>
+      </Image>
+    </LogoContainer>
+  );
 }
 
 export default Logo;

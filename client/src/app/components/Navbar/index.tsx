@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import tw from 'twin.macro';
+import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 
 const NavbarContainer = styled.div`
   min-height: 68px;
@@ -14,12 +14,19 @@ const NavbarContainer = styled.div`
     lg:pr-12
     justify-between
   `}
-`
+`;
+
+const LogoContainer = styled.div`
+  ${tw`
+    flex
+    items-center
+  `}
+`;
 
 function Navbar() {
-  return (
-    <NavbarContainer>Hello from Navbar</NavbarContainer>
-  )
+  return <NavbarContainer>
+
+  </NavbarContainer>;
 }
 
-export default Navbar
+export default Navbar;
