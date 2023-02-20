@@ -1,19 +1,27 @@
-import React from 'react'
-import styled from 'styled-components'
-import CarLogoImg from '../../../assets/images/car-logo.png'
-import tw from 'twin.macro'
+import React from "react";
+import styled from "styled-components";
+import CarLogoImg from "../../../assets/images/car-logo.png";
+import tw from "twin.macro";
 
 const LogoContainer = styled.div`
   ${tw`
     flex
     items-center
   `}
-`
+`;
+
+const LogoText = styled.div`
+  ${tw`
+    text-xl
+    md:text-2xl
+    font-bold
+    text-black
+    m-1
+  `}
+`;
 
 function Logo() {
-  return (
-    <div>Logo</div>
-  )
+  return <div>Logo</div>;
 }
 
-export default Logo
+export default Logo;
