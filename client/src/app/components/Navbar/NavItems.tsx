@@ -26,7 +26,13 @@ const NavItem = styled.li`
 `;
 
 function NavItems() {
-  return <div>NavItems</div>;
+  return (
+    <ListContainer>
+      <NavItem>
+        <a href="#">Home</a>
+      </NavItem>
+    </ListContainer>
+  );
 }
 
 export default NavItems;
