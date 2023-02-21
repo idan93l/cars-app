@@ -31,6 +31,9 @@ function NavItems() {
       <NavItem>
         <a href="#">Home</a>
       </NavItem>
+      <NavItem>
+        <a href="#">Cars</a>
+      </NavItem>
     </ListContainer>
   );
 }
