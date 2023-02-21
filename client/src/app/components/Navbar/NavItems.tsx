@@ -37,6 +37,9 @@ function NavItems() {
       <NavItem>
         <a href="#">Services</a>
       </NavItem>
+      <NavItem>
+        <a href="#">Contact Us</a>
+      </NavItem>
     </ListContainer>
   );
 }
