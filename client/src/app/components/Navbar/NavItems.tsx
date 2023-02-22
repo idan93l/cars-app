@@ -27,6 +27,8 @@ const NavItem = styled.li`
 `;
 
 function NavItems() {
+  const isMobile = 
+
   return (
     <ListContainer>
       <NavItem>
