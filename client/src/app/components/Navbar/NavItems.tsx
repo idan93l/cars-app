@@ -29,7 +29,27 @@ const NavItem = styled.li`
 `;
 
 function NavItems() {
-  const isMobile = useMediaQuery({ maxWidth: SCREENS.sm})
+  const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
+
+  if (isMobile)
+    return (
+      <Menu>
+        <ListContainer>
+          <NavItem>
+            <a href="#">Home</a>
+          </NavItem>
+          <NavItem>
+            <a href="#">Cars</a>
+          </NavItem>
+          <NavItem>
+            <a href="#">Services</a>
+          </NavItem>
+          <NavItem>
+            <a href="#">Contact Us</a>
+          </NavItem>
+        </ListContainer>
+      </Menu>
+    );
 
   return (
     <ListContainer>
