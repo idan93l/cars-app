@@ -28,7 +28,7 @@ const NavItem = styled.li`
 `;
 
 function NavItems() {
-  const isMobile = 
+  const isMobile = useMediaQuery({ maxWidth: })
 
   return (
     <ListContainer>
