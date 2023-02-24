@@ -14,7 +14,7 @@ const ListContainer = styled.ul`
 
 const NavItem = styled.li`
   ${tw`
-    text-xs
+    text-sm
     md:text-base
     text-black
     font-medium
