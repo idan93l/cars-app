@@ -34,7 +34,7 @@ function NavItems() {
 
   if (isMobile)
     return (
-      <Menu styles={menuStyles}>
+      <Menu right styles={menuStyles}>
         <ListContainer>
           <NavItem>
             <a href="#">Home</a>
