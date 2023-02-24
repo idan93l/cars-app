@@ -34,7 +34,7 @@ const NavItem = styled.li<{menu?: any}>`
       text-xl
       mb-3
       focus:text-white
-      
+
     `}
   `}
 `;
@@ -46,16 +46,16 @@ function NavItems() {
     return (
       <Menu right styles={menuStyles}>
         <ListContainer>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Home</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Cars</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Services</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Contact Us</a>
           </NavItem>
         </ListContainer>
