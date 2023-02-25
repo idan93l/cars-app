@@ -25,6 +25,16 @@ const LeftContainer = styled.div`
   `}
 `
 
+const rightContainer = styled.div`
+  ${tw`
+    w-1/2
+    flex
+    flex-col
+    relative
+    mt-20
+  `}
+`
+
 function TopSection() {
   return (
     <div>TopSection</div>
