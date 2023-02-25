@@ -20,7 +20,8 @@ const TopSectionContainer = styled.div`
 const LeftContainer = styled.div`
   ${tw`
     w-1/2
-    
+    flex
+    flex-col
   `}
 `
 
