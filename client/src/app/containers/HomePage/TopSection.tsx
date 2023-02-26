@@ -65,9 +65,17 @@ const Description = styled.p`
 `
 
 const BlobContainer = styled.div`
-  ${tw`
+  width: 20em;
+  height: 10em;
+  position: absolute;
+  right: -5em;
+  top: -9em;
+  z-index: -1;
+  transform: rotate(-30deg);
+
+  img {
     
-  `}
+  }
 `
 
 function TopSection() {
