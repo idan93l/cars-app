@@ -52,6 +52,12 @@ const Slogan = styled.h1`
   `}
 `
 
+const Description = styled.p`
+  ${tw`
+    
+  `}
+`
+
 function TopSection() {
   return (
     <div>TopSection</div>
