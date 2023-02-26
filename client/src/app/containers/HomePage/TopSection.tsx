@@ -35,6 +35,12 @@ const rightContainer = styled.div`
   `}
 `
 
+const Slogan = styled.h1`
+  ${tw`
+    
+  `}
+`
+
 function TopSection() {
   return (
     <div>TopSection</div>
