@@ -77,8 +77,12 @@ const BlobContainer = styled.div`
     width: 100%;
     height: auto;
     max-width: max-content;
-    
+
   }
+`
+
+const StandaloneCar = styled.div`
+  
 `
 
 function TopSection() {
