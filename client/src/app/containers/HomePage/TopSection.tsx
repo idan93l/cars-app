@@ -110,10 +110,10 @@ function TopSection() {
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
-          <img src="" alt="" />
+          <img src={BlobImg} alt="BlobImg" />
         </BlobContainer>
         <StandaloneCar>
-          <img src="" alt="" />
+          <img src={MclarenCarImg} alt="Mclaren" />
         </StandaloneCar>
       </RightContainer>
     </TopSectionContainer>
