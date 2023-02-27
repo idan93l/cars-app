@@ -25,7 +25,7 @@ const LeftContainer = styled.div`
   `}
 `
 
-const rightContainer = styled.div`
+const RightContainer = styled.div`
   ${tw`
     w-1/2
     flex
@@ -97,7 +97,14 @@ const StandaloneCar = styled.div`
 
 function TopSection() {
   return (
-    <div>TopSection</div>
+    <TopSection>
+      <LeftContainer>
+        
+      </LeftContainer>
+      <RightContainer>
+        
+      </RightContainer>
+    </TopSection>
   )
 }
 
