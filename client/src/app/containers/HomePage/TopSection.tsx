@@ -1,6 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'twin.macro'
+import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
+
+import MclarenCarImg from "../../../assets/images/mclaren-orange-big.png"
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -15,7 +17,7 @@ const TopSectionContainer = styled.div`
     lg:pl-12
     lg:pr-12
   `}
-`
+`;
 
 const LeftContainer = styled.div`
   ${tw`
@@ -23,7 +25,7 @@ const LeftContainer = styled.div`
     flex
     flex-col
   `}
-`
+`;
 
 const RightContainer = styled.div`
   ${tw`
@@ -33,7 +35,7 @@ const RightContainer = styled.div`
     relative
     mt-20
   `}
-`
+`;
 
 const Slogan = styled.h1`
   ${tw`
@@ -50,7 +52,7 @@ const Slogan = styled.h1`
     lg:leading-normal
     xl:leading-relaxed
   `}
-`
+`;
 
 const Description = styled.p`
   ${tw`
@@ -62,7 +64,7 @@ const Description = styled.p`
     max-h-12
     text-gray-800
   `}
-`
+`;
 
 const BlobContainer = styled.div`
   width: 20em;
@@ -77,9 +79,8 @@ const BlobContainer = styled.div`
     width: 100%;
     height: auto;
     max-width: max-content;
-
   }
-`
+`;
 
 const StandaloneCar = styled.div`
   width: auto;
@@ -93,19 +94,29 @@ const StandaloneCar = styled.div`
     height: 100%;
     max-width: fit-content;
   }
-`
+`;
 
 function TopSection() {
   return (
-    <TopSection>
+    <TopSectionContainer>
       <LeftContainer>
-        
+        <Slogan>Rent the best quality cars with us!</Slogan>
+        <Description>
+          Always choose the best car from our local stores or order it remotely
+          at the best price for you and get the best quality cars for as long as
+          you like
+        </Description>
       </LeftContainer>
       <RightContainer>
-        
+        <BlobContainer>
+          <img src="" alt="" />
+        </BlobContainer>
+        <StandaloneCar>
+          <img src="" alt="" />
+        </StandaloneCar>
       </RightContainer>
-    </TopSection>
-  )
+    </TopSectionContainer>
+  );
 }
 
-export default TopSection
+export default TopSection;
