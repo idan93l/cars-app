@@ -87,6 +87,12 @@ const StandaloneCar = styled.div`
   right: -6em;
   top: -5em;
   position: absolute;
+
+  img {
+    width: auto;
+    height: 100%;
+    max-width: fit-content;
+  }
 `
 
 function TopSection() {
