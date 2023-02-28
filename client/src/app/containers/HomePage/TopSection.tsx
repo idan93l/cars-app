@@ -126,6 +126,12 @@ const StandaloneCar = styled.div`
     right: -6em;
     top: -6em;
   }
+
+  @media (min-width: ${SCREENS.lg}) {
+    height: 21em;
+    right: -8em;
+    top: -5em;
+  }
 `;
 
 function TopSection() {
