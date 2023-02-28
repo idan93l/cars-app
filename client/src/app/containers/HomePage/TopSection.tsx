@@ -4,6 +4,7 @@ import tw from "twin.macro";
 
 import MclarenCarImg from "../../../assets/images/mclaren-orange-big.png";
 import BlobImg from "../../../assets/images/blob.svg";
+import { SCREENS } from "../../components/responsive";
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -80,6 +81,14 @@ const BlobContainer = styled.div`
     width: 100%;
     height: auto;
     max-width: max-content;
+  }
+
+  @media (min-width: ${SCREENS.sm}) {
+    width: 40em;
+    max-height: 10em;
+    right: -9em;
+    top: -16em;
+    transform: rotate(-25deg);
   }
 `;
 
