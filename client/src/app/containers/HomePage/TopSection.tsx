@@ -120,6 +120,12 @@ const StandaloneCar = styled.div`
     height: 100%;
     max-width: fit-content;
   }
+
+  @media (min-width: ${SCREENS.sm}) {
+    height: 16em;
+    right: -6em;
+    top: -6em;
+  }
 `;
 
 function TopSection() {
