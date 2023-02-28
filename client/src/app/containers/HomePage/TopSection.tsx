@@ -90,6 +90,14 @@ const BlobContainer = styled.div`
     top: -16em;
     transform: rotate(-25deg);
   }
+
+  @media (min-width: ${SCREENS.lg}) {
+    width: 50em;
+    max-height: 30em;
+    right: -7em;
+    top: -15em;
+    transform: rotate(-25deg);
+  }
 `;
 
 const StandaloneCar = styled.div`
