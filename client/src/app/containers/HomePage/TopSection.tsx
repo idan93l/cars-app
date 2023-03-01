@@ -7,7 +7,7 @@ import BlobImg from "../../../assets/images/blob.svg";
 import { SCREENS } from "../../components/responsive";
 
 const TopSectionContainer = styled.div`
-  min-height: 400px;
+  min-height: 600px;
   margin-top: 6em;
   ${tw`
     w-full
