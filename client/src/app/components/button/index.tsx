@@ -1,6 +1,13 @@
 import React from "react";
 
-function Button() {
+interface IButtonProps {
+  theme: "filled" | "outlined";
+  text: string;
+}
+
+
+
+function Button(props: IButtonProps) {
   return <div>Button</div>;
 }
 
