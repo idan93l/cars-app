@@ -29,6 +29,12 @@ const BaseButton = styled.button`
   `}
 `
 
+const OutlinedButton = styled(BaseButton)`
+  ${tw`
+    
+  `}
+`
+
 function Button(props: IButtonProps) {
   return <div>Button</div>;
 }
