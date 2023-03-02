@@ -38,6 +38,15 @@ const OutlinedButton = styled(BaseButton)`
   `}
 `
 
+const FilledButton = styled(BaseButton)`
+  ${tw`
+    bg-red-500
+    hover:bg-transparent
+    hover:text-red-500
+    hover:border-red-500
+  `}
+`
+
 function Button(props: IButtonProps) {
   return <div>Button</div>;
 }
