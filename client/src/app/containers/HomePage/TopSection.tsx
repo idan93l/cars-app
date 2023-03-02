@@ -141,6 +141,12 @@ const StandaloneCar = styled.div`
   }
 `;
 
+const ButtonsContainer = styled.div`
+  ${tw`
+    
+  `}
+`
+
 function TopSection() {
   return (
     <TopSectionContainer>
@@ -152,6 +158,7 @@ function TopSection() {
           you like
         </Description>
         <Button theme="outlined" text="Book Your Ride"/>
+        <Button theme="filled" text="Sell Your Car"/>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
