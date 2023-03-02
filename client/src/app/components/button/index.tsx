@@ -27,7 +27,7 @@ const BaseButton = styled.button`
     ease-in-out
     m-1
   `}
-`
+`;
 
 const OutlinedButton = styled(BaseButton)`
   ${tw`
@@ -36,7 +36,7 @@ const OutlinedButton = styled(BaseButton)`
     hover:text-red-500
     hover:border-red-500
   `}
-`
+`;
 
 const FilledButton = styled(BaseButton)`
   ${tw`
@@ -47,10 +47,13 @@ const FilledButton = styled(BaseButton)`
     hover:text-white
     hover:border-transparent
   `}
-`
+`;
 
 function Button(props: IButtonProps) {
-  return <div>Button</div>;
+  const { theme, text } = props;
+
+  if (theme === "filled") return <FilledButton>{text}</FilledButton>;
+  else return <OutlinedButton>{text}</OutlinedButton>;
 }
 
 export default Button;
