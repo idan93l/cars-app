@@ -144,6 +144,7 @@ const StandaloneCar = styled.div`
 const ButtonsContainer = styled.div`
   ${tw`
     flex
+    mt-4
   `}
 `
 
