@@ -57,4 +57,8 @@ function Button(props: IButtonProps) {
   else return <OutlinedButton>{text}</OutlinedButton>;
 }
 
+Button.defaultProps = {
+  theme: "outlined",
+};
+
 export default Button;

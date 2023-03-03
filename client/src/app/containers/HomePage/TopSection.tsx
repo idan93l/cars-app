@@ -160,7 +160,7 @@ function TopSection() {
           you like
         </Description>
         <ButtonsContainer>
-        <Button theme="outlined" text="Book Your Ride"/>
+        <Button text="Book Your Ride"/>
         <Button theme="filled" text="Sell Your Car"/>
         </ButtonsContainer>
       </LeftContainer>
