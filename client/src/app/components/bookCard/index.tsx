@@ -35,7 +35,13 @@ const Icon = styled.span`
   `}
 `
 
-
+const name = styled.span`
+  ${tw`
+    text-gray-600
+    text-xs
+    md:text-sm
+  `}
+`
 
 function BookCard() {
   return (
