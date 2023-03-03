@@ -1,3 +1,5 @@
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'twin.macro'
@@ -52,13 +54,26 @@ const LineSeparator = styled.span`
     ml-2
     md:mr-6
     md:ml-6
-    
   `}
 `
 
 function BookCard() {
   return (
-    <div>BookCard</div>
+    <CardContainer>
+      <ItemContainer>
+        <Icon>
+          <FontAwesomeIcon icon={faCalendarAlt}/>
+        </Icon>
+        <Name>Pick Up Date</Name>
+      </ItemContainer>
+      <LineSeparator />
+      <ItemContainer>
+        <Icon>
+          <FontAwesomeIcon icon={faCalendarAlt}/>
+        </Icon>
+        <Name>Return Date</Name>
+      </ItemContainer>
+    </CardContainer>
   )
 }
 
