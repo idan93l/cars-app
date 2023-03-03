@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/navbar";
 import TopSection from "./TopSection";
 
 const PageContainer = styled.div`
