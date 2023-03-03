@@ -35,11 +35,24 @@ const Icon = styled.span`
   `}
 `
 
-const name = styled.span`
+const Name = styled.span`
   ${tw`
     text-gray-600
     text-xs
     md:text-sm
+  `}
+`
+
+const LineSeparator = styled.span`
+  width: 2px;
+  height: 45%;
+  ${tw`
+    bg-gray-300
+    mr-2
+    ml-2
+    md:mr-6
+    md:ml-6
+    
   `}
 `
 
