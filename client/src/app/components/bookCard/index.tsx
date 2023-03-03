@@ -24,6 +24,19 @@ const ItemContainer = styled.div`
   ${tw`flex`}
 `
 
+const Icon = styled.span`
+  ${tw`
+    text-red-500
+    fill-current
+    text-xs
+    md:text-base
+    mr-1
+    md:mr-3
+  `}
+`
+
+
+
 function BookCard() {
   return (
     <div>BookCard</div>
