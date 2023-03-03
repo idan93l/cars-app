@@ -20,6 +20,10 @@ const CardContainer = styled.div`
   `}
 `
 
+const ItemContainer = styled.div`
+  ${tw`flex`}
+`
+
 function BookCard() {
   return (
     <div>BookCard</div>
