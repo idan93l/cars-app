@@ -45,6 +45,15 @@ const CarName = styled.h3`
   `}
 `;
 
+const PricesContainer = styled.div`
+  ${tw`
+    w-full
+    flex
+    justify-start
+    mt-3
+  `}
+`;
+
 
 
 function Car(props: ICarProps) {
