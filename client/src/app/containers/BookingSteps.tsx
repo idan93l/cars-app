@@ -15,6 +15,15 @@ const Container = styled.div`
   `}
 `
 
+const Title = styled.h2`
+  ${tw`
+    text-xl
+    lg:text-4xl
+    text-black
+    font-extrabold
+  `}
+`
+
 function BookingSteps() {
   return (
     <div>BookingSteps</div>
