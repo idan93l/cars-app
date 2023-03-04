@@ -85,6 +85,13 @@ const CarDetail = styled.span`
   `}
 `;
 
+const CarInfo = styled.h6`
+  ${tw`
+    text-gray-400
+    text-xs
+  `}
+`;
+
 
 
 function Car(props: ICarProps) {
