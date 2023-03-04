@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import BookCard from "../../components/bookCard";
 import { Marginer } from "../../components/marginer";
 import Navbar from "../../components/navbar";
-import BookingSteps from "../BookingSteps";
+import BookingSteps from "./BookingSteps";
 import TopSection from "./TopSection";
 
 const PageContainer = styled.div`
