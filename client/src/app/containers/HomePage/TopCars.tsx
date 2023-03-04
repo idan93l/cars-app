@@ -27,6 +27,17 @@ const Title = styled.h2`
   `}
 `;
 
+const CarContainer = styled.div`
+  ${tw`
+    w-full
+    flex
+    flex-wrap
+    justify-center
+    mt-7
+    md:mt-10
+  `}
+`
+
 function TopCars() {
   return <div>TopCars</div>;
 }
