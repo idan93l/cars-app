@@ -54,6 +54,14 @@ const PricesContainer = styled.div`
   `}
 `;
 
+const MonthlyPrice = styled.h5`
+  ${tw`
+    text-gray-500
+    font-bold
+    text-sm
+  `}
+`;
+
 
 
 function Car(props: ICarProps) {
