@@ -52,7 +52,7 @@ const InfoContainer = styled.div`
     md:ml-6
     2xl:ml-16
   `}
-`
+`;
 
 const Title = styled.h1`
   ${tw`
@@ -62,6 +62,17 @@ const Title = styled.h1`
     font-extrabold
     md:font-black
     md:leading-normal
+  `}
+`;
+
+const InfoText = styled.p`
+  ${tw`
+    max-w-2xl
+    text-sm
+    md:text-base
+    text-gray-500
+    font-normal
+    mt-4
   `}
 `
 
