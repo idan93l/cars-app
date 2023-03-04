@@ -54,6 +54,17 @@ const InfoContainer = styled.div`
   `}
 `
 
+const Title = styled.h1`
+  ${tw`
+    text-black
+    text-2xl
+    md:text-5xl
+    font-extrabold
+    md:font-black
+    md:leading-normal
+  `}
+`
+
 function AboutUs() {
   return <div>AboutUs</div>;
 }
