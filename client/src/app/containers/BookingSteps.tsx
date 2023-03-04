@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'twin.macro'
+import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 
 const Container = styled.div`
   ${tw`
@@ -13,7 +13,7 @@ const Container = styled.div`
     lg:pt-6
     lg:pb-6
   `}
-`
+`;
 
 const Title = styled.h2`
   ${tw`
@@ -22,7 +22,7 @@ const Title = styled.h2`
     text-black
     font-extrabold
   `}
-`
+`;
 
 const StepsContainer = styled.div`
   ${tw`
@@ -32,12 +32,22 @@ const StepsContainer = styled.div`
     mt-7
     lg:mt-16
   `}
+`;
+
+const StepContainer = styled.div`
+  ${tw`
+    flex
+    flex-col
+    w-16
+    md:w-96
+    items-center
+    transition-colors
+    hover:text-red-500
+  `}
 `
 
 function BookingSteps() {
-  return (
-    <div>BookingSteps</div>
-  )
+  return <div>BookingSteps</div>;
 }
 
-export default BookingSteps
+export default BookingSteps;
