@@ -44,7 +44,19 @@ const StepContainer = styled.div`
     transition-colors
     hover:text-red-500
   `}
-`
+`;
+
+const Step = styled.div`
+  ${tw`
+    flex
+    rounded-lg
+    items-center
+    justify-center
+    p-6
+  `}
+`;
+
+
 
 function BookingSteps() {
   return <div>BookingSteps</div>;
