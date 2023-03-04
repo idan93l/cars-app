@@ -76,7 +76,16 @@ const CarDetailContainer = styled.div`
     w-full
     justify-between
   `}
-`
+`;
+
+const CarDetail = styled.span`
+  ${tw`
+    flex
+    items-center
+  `}
+`;
+
+
 
 function Car(props: ICarProps) {
   return <div>Car</div>;
