@@ -8,7 +8,7 @@ import { SCREENS } from "../../components/responsive";
 import Button from "../../components/button";
 
 const TopSectionContainer = styled.div`
-  min-height: 600px;
+  min-height: 400px;
   margin-top: 6em;
   ${tw`
     w-full
@@ -19,7 +19,7 @@ const TopSectionContainer = styled.div`
     pr-3
     lg:pl-12
     lg:pr-12
-  `}
+  `};
 `;
 
 const LeftContainer = styled.div`
@@ -27,7 +27,7 @@ const LeftContainer = styled.div`
     w-1/2
     flex
     flex-col
-  `}
+  `};
 `;
 
 const RightContainer = styled.div`
@@ -37,7 +37,7 @@ const RightContainer = styled.div`
     flex-col
     relative
     mt-20
-  `}
+  `};
 `;
 
 const Slogan = styled.h1`
@@ -54,7 +54,7 @@ const Slogan = styled.h1`
     sm:leading-snug
     lg:leading-normal
     xl:leading-relaxed
-  `}
+  `};
 `;
 
 const Description = styled.p`
@@ -66,7 +66,7 @@ const Description = styled.p`
     overflow-hidden
     max-h-12
     text-gray-800
-  `}
+  `};
 `;
 
 const BlobContainer = styled.div`
@@ -81,7 +81,7 @@ const BlobContainer = styled.div`
   img {
     width: 100%;
     height: auto;
-    max-width: max-content;
+    max-height: max-content;
   }
 
   @media (min-width: ${SCREENS.sm}) {
@@ -146,10 +146,10 @@ const ButtonsContainer = styled.div`
     flex
     flex-wrap
     mt-4
-  `}
-`
+  `};
+`;
 
-function TopSection() {
+export default function TopSection() {
   return (
     <TopSectionContainer>
       <LeftContainer>
@@ -160,8 +160,8 @@ function TopSection() {
           you like
         </Description>
         <ButtonsContainer>
-        <Button text="Book Your Ride"/>
-        <Button theme="filled" text="Sell Your Car"/>
+          <Button text="Book Your Ride" />
+          <Button theme="filled" text="Sell Your Car" />
         </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
@@ -175,5 +175,3 @@ function TopSection() {
     </TopSectionContainer>
   );
 }
-
-export default TopSection;
