@@ -1,3 +1,9 @@
+import {
+  faEllipsisH,
+  faFillDrip,
+  faTachometerAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -7,9 +13,9 @@ import Button from "../button";
 interface ICarProps extends ICar {}
 
 const CarContainer = styled.div`
-  min-width: 16.5em;
-  min-height: 22.2em;
-  max-height: 22.2em;
+  width: 16.5em;
+  min-height: 23em;
+  max-height: 23em;
   box-shadow: 0 1.3px 17px -2px rgba(0, 0, 0, 0.4);
 
   ${tw`
@@ -55,6 +61,24 @@ const PricesContainer = styled.div`
   `}
 `;
 
+const SmallText = styled.p`
+  color: inherit;
+  ${tw`
+    inline-flex
+    text-xs
+    font-thin
+  `}
+`
+
+const DailyPrice = styled.h5`
+  ${tw`
+    text-red-500
+    font-bold
+    text-sm
+    mr-3
+  `};
+`;
+
 const MonthlyPrice = styled.h5`
   ${tw`
     text-gray-500
@@ -71,7 +95,7 @@ const SmallIcon = styled.span`
   `}
 `;
 
-const CarDetailContainer = styled.div`
+const CarDetailsContainer = styled.div`
   ${tw`
     flex
     w-full
@@ -112,7 +136,42 @@ const RentButton = styled(Button)`
 `
 
 function Car(props: ICarProps) {
-  return <div>Car</div>;
+  const {name, thumbnailSrc, dailyPrice, monthlyPrice, mileage, gearType, gas} = props;
+
+  return (
+    <CarContainer>
+      <CarThumbnail>
+        <img src={thumbnailSrc} alt="thumbnail" />
+      </CarThumbnail>
+      <CarName>{name}</CarName>
+      <PricesContainer>
+        <DailyPrice>${ dailyPrice }<SmallText>/Day</SmallText></DailyPrice>
+        <MonthlyPrice>${ monthlyPrice }<SmallText>/Month</SmallText></MonthlyPrice>
+      </PricesContainer>
+      <Separator />
+      <CarDetailsContainer>
+        <CarDetail>
+          <SmallIcon>
+            <FontAwesomeIcon icon={faTachometerAlt}/>
+          </SmallIcon>
+          <CarInfo>{ mileage }</CarInfo>
+        </CarDetail>
+        <CarDetail>
+          <SmallIcon>
+            <FontAwesomeIcon icon={faEllipsisH}/>
+          </SmallIcon>
+          <CarInfo>{ gearType }</CarInfo>
+        </CarDetail>
+        <CarDetail>
+          <SmallIcon>
+            <FontAwesomeIcon icon={faFillDrip}/>
+          </SmallIcon>
+          <CarInfo>{ gas }</CarInfo>
+        </CarDetail>
+      </CarDetailsContainer>
+      <RentButton text="Rent Now!" />
+    </CarContainer>
+  );
 }
 
 export default Car;
