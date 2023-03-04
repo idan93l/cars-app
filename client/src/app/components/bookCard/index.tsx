@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import { faCalendarAlt, faCaretSquareDown, faCaretSquareUp } from "@fortawesome/free-regular-svg-icons";
+import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Button from "../button";
 import { Marginer } from "../marginer";
-
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
 const CardContainer = styled.div`
   min-height: 4.3em;
@@ -70,7 +68,7 @@ const LineSeparator = styled.span`
 
 const SmallIcon = styled.span`
   ${tw`
-    text-gray-700
+    text-gray-500
     fill-current
     text-xs
     md:text-base
@@ -81,6 +79,7 @@ const SmallIcon = styled.span`
 const DateCalendar = styled(Calendar)`
   position: absolute;
   max-width: none;
+  user-select: none;
   top: 3.5em;
   left: -2em;
 `;
@@ -120,6 +119,9 @@ function BookCard() {
         </Icon>
         <Name onClick={toggleReturnDateCalendar}>Return Date</Name>
         {isReturnCalendarOpen && <DateCalendar value={returnDate} onChange={setReturnDate as any}/>}
+        <SmallIcon>
+          <FontAwesomeIcon icon={isReturnCalendarOpen ? faCaretUp : faCaretDown} />
+        </SmallIcon>
       </ItemContainer>
       <Marginer direction="horizontal" margin="2em" />
       <Button text="Book Your Ride" />
