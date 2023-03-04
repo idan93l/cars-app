@@ -24,6 +24,16 @@ const Title = styled.h2`
   `}
 `
 
+const StepsContainer = styled.div`
+  ${tw`
+    flex
+    justify-evenly
+    flex-wrap
+    mt-7
+    lg:mt-16
+  `}
+`
+
 function BookingSteps() {
   return (
     <div>BookingSteps</div>
