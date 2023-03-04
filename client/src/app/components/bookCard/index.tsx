@@ -66,6 +66,8 @@ const LineSeparator = styled.span`
   `}
 `;
 
+
+
 const DateCalendar = styled(Calendar)`
   position: absolute;
   max-width: none;
@@ -76,9 +78,17 @@ const DateCalendar = styled(Calendar)`
 function BookCard() {
   const [startDate, setStartDate] = useState<Date>(new Date());
   const [isStartCalendarOpen, setIsStartCalendarOpen] = useState(false);
+  const [returnDate, setReturnDate] = useState<Date>(new Date());
+  const [isReturnCalendarOpen, setIsReturnCalendarOpen] = useState(false);
 
   const toggleStartDateCalendar = () => {
     setIsStartCalendarOpen(!isStartCalendarOpen);
+    if(isReturnCalendarOpen) setIsReturnCalendarOpen(false);
+  };
+
+  const toggleReturnDateCalendar = () => {
+    setIsReturnCalendarOpen(!isReturnCalendarOpen);
+    if(isStartCalendarOpen) setIsStartCalendarOpen(false);
   };
 
   return (
@@ -95,7 +105,8 @@ function BookCard() {
         <Icon>
           <FontAwesomeIcon icon={faCalendarAlt} />
         </Icon>
-        <Name>Return Date</Name>
+        <Name onClick={toggleReturnDateCalendar}>Return Date</Name>
+        {isReturnCalendarOpen && <DateCalendar value={returnDate} onChange={setReturnDate as any}/>}
       </ItemContainer>
       <Marginer direction="horizontal" margin="2em" />
       <Button text="Book Your Ride" />
