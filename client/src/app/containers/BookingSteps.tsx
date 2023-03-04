@@ -1,3 +1,9 @@
+import {
+  faCalendarAlt,
+  faCarSide,
+  faMapMarkedAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -17,8 +23,8 @@ const Container = styled.div`
 
 const Title = styled.h2`
   ${tw`
-    text-xl
-    lg:text-4xl
+    text-3xl
+    lg:text-5xl
     text-black
     font-extrabold
   `}
@@ -38,15 +44,16 @@ const StepContainer = styled.div`
   ${tw`
     flex
     flex-col
-    w-16
     md:w-96
     items-center
     transition-colors
     hover:text-red-500
+    m-3
   `}
 `;
 
 const Step = styled.div`
+box-shadow: 0 1.3px 12px -3px rgba(0, 0, 0, 0.4);
   ${tw`
     flex
     rounded-lg
@@ -80,10 +87,49 @@ const StepIcon = styled.span`
     text-red-500
     text-3xl
   `}
-`
+`;
 
 function BookingSteps() {
-  return <div>BookingSteps</div>;
+  return (
+    <Container>
+      <Title>Our Working Steps</Title>
+      <StepsContainer>
+        <StepContainer>
+          <Step>
+            <StepIcon>
+              <FontAwesomeIcon icon={faMapMarkedAlt}/>
+            </StepIcon>
+          </Step>
+          <StepTitle>Choose Location</StepTitle>
+          <StepDescription>
+            Find the nearest Yourcar point and book your car.
+          </StepDescription>
+        </StepContainer>
+        <StepContainer>
+          <Step>
+            <StepIcon>
+              <FontAwesomeIcon icon={faCalendarAlt}/>
+            </StepIcon>
+          </Step>
+          <StepTitle>Pick-Up Date</StepTitle>
+          <StepDescription>
+            Choose the best date to rent a car for you.
+          </StepDescription>
+        </StepContainer>
+        <StepContainer>
+          <Step>
+            <StepIcon>
+              <FontAwesomeIcon icon={faCarSide}/>
+            </StepIcon>
+          </Step>
+          <StepTitle>Book Your Car</StepTitle>
+          <StepDescription>
+            Book the desired car with ease in one single click!
+          </StepDescription>
+        </StepContainer>
+      </StepsContainer>
+    </Container>
+  );
 }
 
 export default BookingSteps;
