@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'twin.macro'
-import { SCREENS } from '../../components/responsive';
+import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
+import { SCREENS } from "../../components/responsive";
 
 const AboutUsContainer = styled.div`
   ${tw`
@@ -42,12 +42,20 @@ const CarContainer = styled.div`
     height: 35em;
     margin-left: 0;
   }
+`;
+
+const InfoContainer = styled.div`
+  ${tw`
+    w-1/2
+    flex
+    flex-col
+    md:ml-6
+    2xl:ml-16
+  `}
 `
 
 function AboutUs() {
-  return (
-    <div>AboutUs</div>
-  )
+  return <div>AboutUs</div>;
 }
 
-export default AboutUs
+export default AboutUs;
