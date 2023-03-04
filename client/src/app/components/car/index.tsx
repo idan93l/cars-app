@@ -92,7 +92,16 @@ const CarInfo = styled.h6`
   `}
 `;
 
-
+const Separator = styled.div`
+  min-width: 100%;
+  min-height: 1px;
+  ${tw`
+    flex
+    bg-gray-300
+    mt-2
+    mb-2
+  `}
+`
 
 function Car(props: ICarProps) {
   return <div>Car</div>;
