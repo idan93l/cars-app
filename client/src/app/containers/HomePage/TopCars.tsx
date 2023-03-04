@@ -27,7 +27,7 @@ const Title = styled.h2`
   `}
 `;
 
-const CarContainer = styled.div`
+const CarsContainer = styled.div`
   ${tw`
     w-full
     flex
@@ -39,7 +39,14 @@ const CarContainer = styled.div`
 `
 
 function TopCars() {
-  return <div>TopCars</div>;
+  return (
+    <TopCarsContainer>
+      <Title>Explore Our Top Deals</Title>
+      <CarsContainer>
+
+      </CarsContainer>
+    </TopCarsContainer>
+  )
 }
 
 export default TopCars;
