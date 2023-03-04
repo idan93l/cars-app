@@ -63,6 +63,16 @@ const StepTitle = styled.h4`
     font-semibold
     mt-4
   `}
+`;
+
+const StepDescription = styled.p`
+  ${tw`
+    w-10/12
+    text-xs
+    md:text-sm
+    text-center
+    text-gray-600
+  `}
 `
 
 function BookingSteps() {
