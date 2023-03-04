@@ -18,7 +18,14 @@ const TopCarsContainer = styled.div`
   `}
 `;
 
-
+const Title = styled.h2`
+  ${tw`
+    text-3xl
+    lg:text-5xl
+    text-black
+    font-extrabold
+  `}
+`;
 
 function TopCars() {
   return <div>TopCars</div>;
