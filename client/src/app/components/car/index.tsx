@@ -70,7 +70,13 @@ const SmallIcon = styled.span`
   `}
 `;
 
-
+const CarDetailContainer = styled.div`
+  ${tw`
+    flex
+    w-full
+    justify-between
+  `}
+`
 
 function Car(props: ICarProps) {
   return <div>Car</div>;
