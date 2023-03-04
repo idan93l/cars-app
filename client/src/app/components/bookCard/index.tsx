@@ -27,7 +27,7 @@ const CardContainer = styled.div`
 `;
 
 const ItemContainer = styled.div`
-  ${tw`flex`}
+  ${tw`flex relative`}
 `;
 
 const Icon = styled.span`
@@ -46,6 +46,8 @@ const Name = styled.span`
     text-gray-600
     text-xs
     md:text-sm
+    cursor-pointer
+    select-none
   `}
 `;
 
@@ -56,8 +58,8 @@ const LineSeparator = styled.span`
     bg-gray-300
     mr-2
     ml-2
-    md:mr-6
-    md:ml-6
+    md:mr-5
+    md:ml-5
   `}
 `;
 
