@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
+import { faCalendarAlt, faCaretSquareDown, faCaretSquareUp } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -8,6 +8,8 @@ import { Marginer } from "../marginer";
 
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
 const CardContainer = styled.div`
   min-height: 4.3em;
@@ -66,7 +68,15 @@ const LineSeparator = styled.span`
   `}
 `;
 
-
+const SmallIcon = styled.span`
+  ${tw`
+    text-gray-700
+    fill-current
+    text-xs
+    md:text-base
+    ml-1
+  `}
+`
 
 const DateCalendar = styled(Calendar)`
   position: absolute;
@@ -99,6 +109,9 @@ function BookCard() {
         </Icon>
         <Name onClick={toggleStartDateCalendar}>Pick Up Date</Name>
         {isStartCalendarOpen && <DateCalendar value={startDate} onChange={setStartDate as any}/>}
+        <SmallIcon>
+          <FontAwesomeIcon icon={isStartCalendarOpen ? faCaretUp : faCaretDown} />
+        </SmallIcon>
       </ItemContainer>
       <LineSeparator />
       <ItemContainer>
