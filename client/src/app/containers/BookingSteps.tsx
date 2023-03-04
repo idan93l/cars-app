@@ -73,6 +73,13 @@ const StepDescription = styled.p`
     text-center
     text-gray-600
   `}
+`;
+
+const StepIcon = styled.span`
+  ${tw`
+    text-red-500
+    text-3xl
+  `}
 `
 
 function BookingSteps() {
