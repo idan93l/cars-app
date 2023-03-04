@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
@@ -66,23 +66,29 @@ const LineSeparator = styled.span`
   `}
 `;
 
-const DateCalender = styled(Calendar)`
+const DateCalendar = styled(Calendar)`
   position: absolute;
   max-width: none;
   top: 3.5em;
   left: -2em;
-
-`
+`;
 
 function BookCard() {
+  const [startDate, setStartDate] = useState<Date>(new Date());
+  const [isStartCalendarOpen, setIsStartCalendarOpen] = useState(false);
+
+  const toggleStartDateCalendar = () => {
+    setIsStartCalendarOpen(!isStartCalendarOpen);
+  };
+
   return (
     <CardContainer>
       <ItemContainer>
         <Icon>
           <FontAwesomeIcon icon={faCalendarAlt} />
         </Icon>
-        <Name>Pick Up Date</Name>
-        <DateCalender />
+        <Name onClick={toggleStartDateCalendar}>Pick Up Date</Name>
+        {isStartCalendarOpen && <DateCalendar value={startDate} onChange={setStartDate as any}/>}
       </ItemContainer>
       <LineSeparator />
       <ItemContainer>
