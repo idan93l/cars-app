@@ -56,7 +56,14 @@ const Step = styled.div`
   `}
 `;
 
-
+const StepTitle = styled.h4`
+  ${tw`
+    text-black
+    text-lg
+    font-semibold
+    mt-4
+  `}
+`
 
 function BookingSteps() {
   return <div>BookingSteps</div>;
