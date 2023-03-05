@@ -48,7 +48,7 @@ const CarsContainer = styled.div`
 function TopCars() {
   // const [current, setCurrent] = useState();
 
-  const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
+  // const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
   const testCar: ICar = {
     name: "Audi S3 Car",
