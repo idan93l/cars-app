@@ -14,8 +14,10 @@ const FooterContainer = styled.div`
   `}
 `
 
-function index() {
-  return <div>index</div>;
+function Footer() {
+  return (
+    <FooterContainer>Container</FooterContainer>
+  )
 }
 
-export default index;
+export default Footer;
