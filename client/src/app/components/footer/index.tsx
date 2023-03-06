@@ -18,9 +18,8 @@ const AboutContainer = styled.div`
   ${tw`
     flex
     flex-col
-    
   `}
-`
+`;
 
 function Footer() {
   return <FooterContainer>Container</FooterContainer>;
