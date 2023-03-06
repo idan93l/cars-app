@@ -12,12 +12,18 @@ const FooterContainer = styled.div`
     pt-7
     pb-1
   `}
+`;
+
+const AboutContainer = styled.div`
+  ${tw`
+    flex
+    flex-col
+    
+  `}
 `
 
 function Footer() {
-  return (
-    <FooterContainer>Container</FooterContainer>
-  )
+  return <FooterContainer>Container</FooterContainer>;
 }
 
 export default Footer;
