@@ -22,9 +22,9 @@ const LogoText = styled.div`
     font-bold
     text-black
     m-1
-    
-  `}
-`;
+  `};
+  ${({ color }: any) => color === "white" ? tw`text-white` : tw`text-black`}
+` as any;
 
 const Image = styled.div`
   width: auto;
@@ -35,7 +35,7 @@ const Image = styled.div`
   }
 `;
 
-function Logo(prop: ILogoProps) {
+function Logo(props: ILogoProps) {
   const { color } = props;
 
   return (
