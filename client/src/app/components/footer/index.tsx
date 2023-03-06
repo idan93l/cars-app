@@ -3,12 +3,12 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 const FooterContainer = styled.div`
-  min-height: 20em;
+  min-height: 30em;
+  background-color: rgb(31 42 76);
   ${tw`
     flex
     flex-wrap
     min-w-full
-    bg-blue-900
     pt-7
     pb-1
   `}
