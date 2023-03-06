@@ -42,7 +42,7 @@ function Logo(props: ILogoProps) {
     <LogoContainer>
       <Image>
         <img src={CarLogoImg} alt="Car" />
-        <LogoText>CarRent</LogoText>
+        <LogoText color={color || "dark"}>CarRent</LogoText>
       </Image>
     </LogoContainer>
   );

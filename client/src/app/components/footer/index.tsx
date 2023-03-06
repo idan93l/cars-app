@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import Logo from "../logo/Logo";
 
 const FooterContainer = styled.div`
   min-height: 30em;
@@ -22,7 +23,11 @@ const AboutContainer = styled.div`
 `;
 
 function Footer() {
-  return <FooterContainer>Container</FooterContainer>;
+  return <FooterContainer>
+    <AboutContainer>
+      <Logo color="white"/>
+    </AboutContainer>
+  </FooterContainer>;
 }
 
 export default Footer;
