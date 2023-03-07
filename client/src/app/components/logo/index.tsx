@@ -37,12 +37,12 @@ const Image = styled.div`
 `;
 
 function Logo(props: ILogoProps) {
-  const { color } = props;
+  const { color, bgColor } = props;
 
   return (
     <LogoContainer>
       <Image>
-        <img src={color === "white" ? CarLogoImg : CarLogoDarkImg} alt="Car" />
+        <img src={bgColor === "white" ? CarLogoImg : CarLogoDarkImg} alt="Car" />
         <LogoText color={color || "dark"}>CarRent</LogoText>
       </Image>
     </LogoContainer>
