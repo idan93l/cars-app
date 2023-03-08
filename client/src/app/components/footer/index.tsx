@@ -8,18 +8,22 @@ const FooterContainer = styled.div`
   background-color: #1d2124;
   ${tw`
     flex
-    flex-wrap
+    flex-col
     min-w-full
-    pt-7
-    pb-1
+    pt-10
+    md:pt-16
+    items-center
+    justify-center
   `}
 `;
 
 const InnerContainer = styled.div`
   ${tw`
     flex
-    flex-wrap
+    w-full
+    h-full
     max-w-screen-2xl
+    flex-wrap
   `}
 `;
 
@@ -27,6 +31,12 @@ const AboutContainer = styled.div`
   ${tw`
     flex
     flex-col
+    mr-2
+    md:mr-16
+    pl-10
+    pr-10
+    md:pl-3
+    md:pr-3
   `}
 `;
 
