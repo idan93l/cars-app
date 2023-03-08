@@ -15,6 +15,14 @@ const FooterContainer = styled.div`
   `}
 `;
 
+const InnerContainer = styled.div`
+  ${tw`
+    flex
+    flex-wrap
+    max-w-screen-2xl
+  `}
+`;
+
 const AboutContainer = styled.div`
   ${tw`
     flex
@@ -23,11 +31,13 @@ const AboutContainer = styled.div`
 `;
 
 function Footer() {
-  return <FooterContainer>
-    <AboutContainer>
-      <Logo color="white" bgColor="dark"/>
-    </AboutContainer>
-  </FooterContainer>;
+  return (
+    <FooterContainer>
+      <AboutContainer>
+        <Logo color="white" bgColor="dark" />
+      </AboutContainer>
+    </FooterContainer>
+  );
 }
 
 export default Footer;
