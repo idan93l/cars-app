@@ -33,9 +33,11 @@ const AboutContainer = styled.div`
 function Footer() {
   return (
     <FooterContainer>
-      <AboutContainer>
-        <Logo color="white" bgColor="dark" />
-      </AboutContainer>
+      <InnerContainer>
+        <AboutContainer>
+          <Logo color="white" bgColor="dark" />
+        </AboutContainer>
+      </InnerContainer>
     </FooterContainer>
   );
 }
