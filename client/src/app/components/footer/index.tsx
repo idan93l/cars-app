@@ -42,9 +42,11 @@ const AboutContainer = styled.div`
 
 const AboutText = styled.p`
   ${tw`
-    
+    text-white
+    text-sm
+    font-normal
   `}
-`
+`;
 
 function Footer() {
   return (
