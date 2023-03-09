@@ -40,6 +40,12 @@ const AboutContainer = styled.div`
   `}
 `;
 
+const LinkList = styled.ul`
+  ${tw`
+    
+  `}
+`
+
 const AboutText = styled.p`
   ${tw`
     text-white
