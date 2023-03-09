@@ -40,6 +40,17 @@ const AboutContainer = styled.div`
   `}
 `;
 
+const AboutText = styled.p`
+  ${tw`
+    text-white
+    text-sm
+    font-normal
+    max-w-xs
+    leading-5
+    mt-2
+  `}
+`;
+
 const LinkList = styled.ul`
   ${tw`
     outline-none
@@ -51,18 +62,10 @@ const LinkList = styled.ul`
 
 const HeaderTitle = styled.h3`
   ${tw`
-
-  `}
-`;
-
-const AboutText = styled.p`
-  ${tw`
+    text-base
+    font-bold
     text-white
-    text-sm
-    font-normal
-    max-w-xs
-    leading-5
-    mt-2
+    mb-3
   `}
 `;
 
