@@ -45,6 +45,9 @@ const AboutText = styled.p`
     text-white
     text-sm
     font-normal
+    max-w-xs
+    leading-5
+    mt-2
   `}
 `;
 
