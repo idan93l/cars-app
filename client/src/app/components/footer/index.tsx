@@ -54,6 +54,11 @@ function Footer() {
       <InnerContainer>
         <AboutContainer>
           <Logo color="white" bgColor="dark" />
+          <AboutText>
+            CaRent is a car renting and selling company located in many
+            countries across the globe. We have high quality cars and and top
+            rated service.
+          </AboutText>
         </AboutContainer>
       </InnerContainer>
     </FooterContainer>
