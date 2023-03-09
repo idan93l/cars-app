@@ -49,6 +49,12 @@ const LinkList = styled.ul`
   `}
 `;
 
+const HeaderTitle = styled.h3`
+  ${tw`
+
+  `}
+`;
+
 const AboutText = styled.p`
   ${tw`
     text-white
