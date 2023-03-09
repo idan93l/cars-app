@@ -42,9 +42,12 @@ const AboutContainer = styled.div`
 
 const LinkList = styled.ul`
   ${tw`
-    
+    outline-none
+    list-none
+    flex
+    flex-col
   `}
-`
+`;
 
 const AboutText = styled.p`
   ${tw`
