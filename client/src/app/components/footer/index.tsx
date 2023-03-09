@@ -40,6 +40,12 @@ const AboutContainer = styled.div`
   `}
 `;
 
+const AboutText = styled.p`
+  ${tw`
+    
+  `}
+`
+
 function Footer() {
   return (
     <FooterContainer>
