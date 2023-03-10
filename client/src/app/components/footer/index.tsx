@@ -62,7 +62,9 @@ const LinksList = styled.ul`
 
 const ListItem = styled.li`
   ${tw`
-    
+    text-sm
+    text-white
+    mb-3
   `}
 `
 
