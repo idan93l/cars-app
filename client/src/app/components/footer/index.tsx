@@ -51,6 +51,12 @@ const AboutText = styled.p`
   `}
 `;
 
+const SectionContainer = styled.div`
+  ${tw`
+    
+  `}
+`
+
 const LinksList = styled.ul`
   ${tw`
     outline-none
