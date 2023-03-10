@@ -53,9 +53,11 @@ const AboutText = styled.p`
 
 const SectionContainer = styled.div`
   ${tw`
-    
+    flex
+    flex-col
+    mr-3
   `}
-`
+`;
 
 const LinksList = styled.ul`
   ${tw`
