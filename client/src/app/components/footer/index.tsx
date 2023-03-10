@@ -60,7 +60,11 @@ const LinksList = styled.ul`
   `}
 `;
 
-
+const ListItem = styled.li`
+  ${tw`
+    
+  `}
+`
 
 const HeaderTitle = styled.h3`
   ${tw`
