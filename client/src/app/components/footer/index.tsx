@@ -51,7 +51,7 @@ const AboutText = styled.p`
   `}
 `;
 
-const LinkList = styled.ul`
+const LinksList = styled.ul`
   ${tw`
     outline-none
     list-none
@@ -59,6 +59,8 @@ const LinkList = styled.ul`
     flex-col
   `}
 `;
+
+
 
 const HeaderTitle = styled.h3`
   ${tw`
