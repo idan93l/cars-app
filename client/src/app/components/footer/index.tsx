@@ -96,7 +96,7 @@ function Footer() {
           </AboutText>
         </AboutContainer>
         <LinksList>
-          
+          <HeaderTitle>Our Links</HeaderTitle>
         </LinksList>
       </InnerContainer>
     </FooterContainer>
