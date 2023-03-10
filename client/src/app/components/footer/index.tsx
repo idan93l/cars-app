@@ -62,11 +62,17 @@ const LinksList = styled.ul`
 
 const ListItem = styled.li`
   ${tw`
+    mb-3
+  `}
+
+  & > a {
+    ${tw`
     text-sm
     text-white
     mb-3
   `}
-`
+  }
+`;
 
 const HeaderTitle = styled.h3`
   ${tw`
