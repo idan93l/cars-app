@@ -108,6 +108,7 @@ function Footer() {
           <LinksList>
             <ListItem><a href="#">Home</a></ListItem>
             <ListItem><a href="#">About Us</a></ListItem>
+            <ListItem><a href="#">Services</a></ListItem>
           </LinksList>
         </SectionContainer>
       </InnerContainer>
