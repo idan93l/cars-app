@@ -84,7 +84,7 @@ const ListItem = styled.li`
 
 const HeaderTitle = styled.h3`
   ${tw`
-    text-base
+    text-lg
     font-bold
     text-white
     mb-3
@@ -106,11 +106,21 @@ function Footer() {
         <SectionContainer>
           <HeaderTitle>Our Links</HeaderTitle>
           <LinksList>
-            <ListItem><a href="#">Home</a></ListItem>
-            <ListItem><a href="#">About Us</a></ListItem>
-            <ListItem><a href="#">Services</a></ListItem>
-            <ListItem><a href="#">Models</a></ListItem>
-            <ListItem><a href="#">Blog</a></ListItem>
+            <ListItem>
+              <a href="#">Home</a>
+            </ListItem>
+            <ListItem>
+              <a href="#">About Us</a>
+            </ListItem>
+            <ListItem>
+              <a href="#">Services</a>
+            </ListItem>
+            <ListItem>
+              <a href="#">Models</a>
+            </ListItem>
+            <ListItem>
+              <a href="#">Blog</a>
+            </ListItem>
           </LinksList>
         </SectionContainer>
       </InnerContainer>
