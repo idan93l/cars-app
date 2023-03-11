@@ -106,7 +106,7 @@ function Footer() {
         <SectionContainer>
           <HeaderTitle>Our Links</HeaderTitle>
           <LinksList>
-          
+            <ListItem><a href="#">Home</a></ListItem>
           </LinksList>
         </SectionContainer>
       </InnerContainer>
