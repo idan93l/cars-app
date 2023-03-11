@@ -103,9 +103,12 @@ function Footer() {
             rated service.
           </AboutText>
         </AboutContainer>
-        <LinksList>
+        <SectionContainer>
           <HeaderTitle>Our Links</HeaderTitle>
-        </LinksList>
+          <LinksList>
+          
+          </LinksList>
+        </SectionContainer>
       </InnerContainer>
     </FooterContainer>
   );
