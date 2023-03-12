@@ -76,7 +76,7 @@ const ListItem = styled.li`
 
   & > a {
     ${tw`
-    text-sm
+    text-xs
     text-white
     mb-3
   `}
