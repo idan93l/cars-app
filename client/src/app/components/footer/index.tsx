@@ -140,7 +140,7 @@ function Footer() {
               <a href="#">Privacy Policy</a>
             </ListItem>
             <ListItem>
-              <a href="#">Blog</a>
+              <a href="#">Terms & Conditions</a>
             </ListItem>
           </LinksList>
         </SectionContainer>
