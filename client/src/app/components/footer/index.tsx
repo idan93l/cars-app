@@ -128,7 +128,7 @@ function Footer() {
           <HeaderTitle>Other Links</HeaderTitle>
           <LinksList>
             <ListItem>
-              <a href="#">Home</a>
+              <a href="#">FAQ</a>
             </ListItem>
             <ListItem>
               <a href="#">About Us</a>
