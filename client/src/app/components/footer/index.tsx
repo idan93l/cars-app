@@ -131,7 +131,7 @@ function Footer() {
               <a href="#">FAQ</a>
             </ListItem>
             <ListItem>
-              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
             </ListItem>
             <ListItem>
               <a href="#">Services</a>
