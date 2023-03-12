@@ -55,7 +55,8 @@ const SectionContainer = styled.div`
   ${tw`
     flex
     flex-col
-    mr-3
+    mr-2
+    md:mr-12
   `}
 `;
 
