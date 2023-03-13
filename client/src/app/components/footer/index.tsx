@@ -1,3 +1,5 @@
+import { faPhone, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -169,7 +171,9 @@ function Footer() {
         <SectionContainer>
           <HeaderTitle>Call Now</HeaderTitle>
           <HorizontalContainer>
-            <RedIcon></RedIcon>
+            <RedIcon>
+              <FontAwesomeIcon icon={faPhoneAlt}/>
+            </RedIcon>
           </HorizontalContainer>
         </SectionContainer>
       </InnerContainer>
