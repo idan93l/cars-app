@@ -94,7 +94,7 @@ const HeaderTitle = styled.h3`
   `}
 `;
 
-const HorizontalSection = styled.div`
+const HorizontalContainer = styled.div`
   ${tw`
     flex
   `}
@@ -168,7 +168,7 @@ function Footer() {
         </SectionContainer>
         <SectionContainer>
           <HeaderTitle>Call Now</HeaderTitle>
-          <HorizontalSection></HorizontalSection>
+          <HorizontalContainer></HorizontalContainer>
         </SectionContainer>
       </InnerContainer>
     </FooterContainer>
