@@ -161,7 +161,7 @@ function Footer() {
           </LinksList>
         </SectionContainer>
         <SectionContainer>
-          
+          <HeaderTitle>Call Now</HeaderTitle>
         </SectionContainer>
       </InnerContainer>
     </FooterContainer>
