@@ -85,7 +85,7 @@ const ListItem = styled.li`
 
 const HeaderTitle = styled.h3`
   ${tw`
-    text-2xl
+    text-xl
     font-bold
     text-white
     mb-3
