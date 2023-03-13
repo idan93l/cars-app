@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import Logo from "../logo";
 
 const FooterContainer = styled.div`
-  min-height: 30em;
+  min-height: 24em;
   background-color: #1d2124;
   ${tw`
     flex
