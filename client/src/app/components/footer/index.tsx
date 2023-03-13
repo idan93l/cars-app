@@ -100,7 +100,7 @@ const HorizontalContainer = styled.div`
   ${tw`
     flex
   `}
-`
+`;
 
 const RedIcon = styled.span`
   ${tw`
@@ -113,6 +113,12 @@ const RedIcon = styled.span`
     text-white
     text-base
     mr-2
+  `}
+`;
+
+const SmallText = styled.h6`
+  ${tw`
+    
   `}
 `;
 
@@ -172,7 +178,7 @@ function Footer() {
           <HeaderTitle>Call Now</HeaderTitle>
           <HorizontalContainer>
             <RedIcon>
-              <FontAwesomeIcon icon={faPhoneAlt}/>
+              <FontAwesomeIcon icon={faPhoneAlt} />
             </RedIcon>
           </HorizontalContainer>
         </SectionContainer>
