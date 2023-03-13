@@ -76,9 +76,11 @@ const ListItem = styled.li`
 
   & > a {
     ${tw`
-    text-xs
+    text-sm
     text-white
     mb-3
+    transition-all
+    hover:text-gray-200
   `}
   }
 `;
