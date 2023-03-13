@@ -94,6 +94,12 @@ const HeaderTitle = styled.h3`
   `}
 `;
 
+const RedIcon = styled.span`
+  ${tw`
+    
+  `}
+`
+
 function Footer() {
   return (
     <FooterContainer>
