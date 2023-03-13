@@ -118,7 +118,8 @@ const RedIcon = styled.span`
 
 const SmallText = styled.h6`
   ${tw`
-    
+    text-sm
+    text-white
   `}
 `;
 
