@@ -104,9 +104,10 @@ const HorizontalContainer = styled.div`
 
 const RedIcon = styled.span`
   ${tw`
-    w-5
-    h-5
+    w-10
+    h-10
     rounded-full
+    bg-red-500
     flex
     items-center
     justify-center
