@@ -219,7 +219,9 @@ function Footer() {
         </SectionContainer>
       </InnerContainer>
       <BottomContainer>
-        
+        <CopyrightText>
+          Copyright 2023 CaRent. All rights reserved.
+        </CopyrightText>
       </BottomContainer>
     </FooterContainer>
   );
