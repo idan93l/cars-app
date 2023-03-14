@@ -99,6 +99,7 @@ const HeaderTitle = styled.h3`
 const HorizontalContainer = styled.div`
   ${tw`
     flex
+    items-center
   `}
 `;
 
