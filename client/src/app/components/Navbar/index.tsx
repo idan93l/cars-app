@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <NavbarContainer>
       <LogoContainer>
-        <Logo />
+        <Logo color="dark" bgColor="white"/>
       </LogoContainer>
       <NavItems />
     </NavbarContainer>
