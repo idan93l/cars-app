@@ -34,6 +34,12 @@ const BottomContainer = styled.div`
     flex
     
   `}
+`;
+
+const CopyrightText = styled.span`
+  ${tw`
+    
+  `}
 `
 
 const AboutContainer = styled.div`
