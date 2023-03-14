@@ -218,6 +218,9 @@ function Footer() {
           </HorizontalContainer>
         </SectionContainer>
       </InnerContainer>
+      <BottomContainer>
+        
+      </BottomContainer>
     </FooterContainer>
   );
 }
