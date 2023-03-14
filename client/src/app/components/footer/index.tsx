@@ -1,3 +1,4 @@
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faPhone, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -190,7 +191,7 @@ function Footer() {
           <HeaderTitle>Email</HeaderTitle>
           <HorizontalContainer>
             <RedIcon>
-              <FontAwesomeIcon icon={faPhoneAlt} />
+              <FontAwesomeIcon icon={faEnvelope} />
             </RedIcon>
             <SmallText>+972 12-345-678</SmallText>
           </HorizontalContainer>
