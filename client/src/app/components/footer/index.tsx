@@ -186,6 +186,15 @@ function Footer() {
             <SmallText>+972 12-345-678</SmallText>
           </HorizontalContainer>
         </SectionContainer>
+        <SectionContainer>
+          <HeaderTitle>Email</HeaderTitle>
+          <HorizontalContainer>
+            <RedIcon>
+              <FontAwesomeIcon icon={faPhoneAlt} />
+            </RedIcon>
+            <SmallText>+972 12-345-678</SmallText>
+          </HorizontalContainer>
+        </SectionContainer>
       </InnerContainer>
     </FooterContainer>
   );
