@@ -37,10 +37,11 @@ const BottomContainer = styled.div`
 `;
 
 const CopyrightText = styled.small`
+  font-size: 11px;
   ${tw`
-
+    text-gray-400
   `}
-`
+`;
 
 const AboutContainer = styled.div`
   ${tw`
