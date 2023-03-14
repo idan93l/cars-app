@@ -36,9 +36,9 @@ const BottomContainer = styled.div`
   `}
 `;
 
-const CopyrightText = styled.span`
+const CopyrightText = styled.small`
   ${tw`
-    
+
   `}
 `
 
