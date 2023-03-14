@@ -31,15 +31,20 @@ const InnerContainer = styled.div`
 
 const BottomContainer = styled.div`
   ${tw`
+    w-full
     flex
-    
+    max-w-screen-2xl
+    justify-center
+    md:justify-start
+    mt-7
+    md:mt-1
   `}
 `;
 
 const CopyrightText = styled.small`
-  font-size: 11px;
+  font-size: 12px;
   ${tw`
-    text-gray-400
+    text-gray-300
   `}
 `;
 
@@ -220,7 +225,7 @@ function Footer() {
       </InnerContainer>
       <BottomContainer>
         <CopyrightText>
-          Copyright 2023 CaRent. All rights reserved.
+          Copyright & {new Date().getFullYear()} CaRent. All rights reserved.
         </CopyrightText>
       </BottomContainer>
     </FooterContainer>
