@@ -96,7 +96,7 @@ const HeaderTitle = styled.h3`
 
 const HorizontalSection = styled.div`
   ${tw`
-    
+    flex
   `}
 `
 
