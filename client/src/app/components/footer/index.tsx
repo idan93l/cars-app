@@ -168,6 +168,7 @@ function Footer() {
         </SectionContainer>
         <SectionContainer>
           <HeaderTitle>Call Now</HeaderTitle>
+          <HorizontalSection></HorizontalSection>
         </SectionContainer>
       </InnerContainer>
     </FooterContainer>
