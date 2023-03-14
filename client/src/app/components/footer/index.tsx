@@ -29,6 +29,12 @@ const InnerContainer = styled.div`
   `}
 `;
 
+const BottomContainer = styled.div`
+  ${tw`
+    
+  `}
+`
+
 const AboutContainer = styled.div`
   ${tw`
     flex
