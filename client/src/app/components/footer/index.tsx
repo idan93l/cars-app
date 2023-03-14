@@ -193,7 +193,7 @@ function Footer() {
             <RedIcon>
               <FontAwesomeIcon icon={faEnvelope} />
             </RedIcon>
-            <SmallText>+972 12-345-678</SmallText>
+            <SmallText>info@carent.com</SmallText>
           </HorizontalContainer>
         </SectionContainer>
       </InnerContainer>
