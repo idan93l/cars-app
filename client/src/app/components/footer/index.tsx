@@ -94,6 +94,12 @@ const HeaderTitle = styled.h3`
   `}
 `;
 
+const HorizontalSection = styled.div`
+  ${tw`
+    
+  `}
+`
+
 const RedIcon = styled.span`
   ${tw`
     w-5
