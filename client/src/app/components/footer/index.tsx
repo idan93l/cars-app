@@ -31,6 +31,7 @@ const InnerContainer = styled.div`
 
 const BottomContainer = styled.div`
   ${tw`
+    flex
     
   `}
 `
