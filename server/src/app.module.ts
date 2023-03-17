@@ -19,7 +19,7 @@ dotenv.config();
       synchronize: true,
     }),
     GraphQLModule.forRoot({
-      playground: process.env.NODE_ENV === 'development' && true || false,
+      playground: (process.env.NODE_ENV === 'development' && true) || false,
     }),
   ],
   controllers: [AppController],
