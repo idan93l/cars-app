@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import * as dotenv from 'dotenv';
+import { GraphQLModule } from '@nestjs/graphql';
 dotenv.config();
 
 @Module({
@@ -17,6 +18,7 @@ dotenv.config();
       entities: [],
       synchronize: true,
     }),
+    GraphQLModule.forRoot(),
   ],
   controllers: [AppController],
   providers: [AppService],
