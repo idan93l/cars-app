@@ -18,9 +18,11 @@ dotenv.config();
       entities: [],
       synchronize: true,
     }),
-    GraphQLModule.forRoot(),
+    GraphQLModule.forRoot({
+      playground: process.env.NODE_ENV === 'development' && true || false,
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
