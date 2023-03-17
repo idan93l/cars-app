@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import * as dotenv from 'dotenv';
 import { GraphQLModule } from '@nestjs/graphql';
+import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 dotenv.config();
 
 @Module({
@@ -18,7 +19,8 @@ dotenv.config();
       entities: [],
       synchronize: true,
     }),
-    GraphQLModule.forRoot({
+    GraphQLModule.forRoot<ApolloDriverConfig>({
+      driver: ApolloDriver,
       playground: (process.env.NODE_ENV === 'development' && true) || false,
       debug: (process.env.NODE_ENV === 'development' && true) || false,
     }),
@@ -26,4 +28,4 @@ dotenv.config();
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}
