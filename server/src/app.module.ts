@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import * as dotenv from 'dotenv';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { ComponentsModule } from './components/components.module';
 dotenv.config();
 
 @Module({
@@ -25,6 +26,7 @@ dotenv.config();
       playground: (process.env.NODE_ENV === 'development' && true) || false,
       autoSchemaFile: true,
     }),
+    ComponentsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
