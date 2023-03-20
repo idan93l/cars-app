@@ -22,7 +22,7 @@ dotenv.config();
     }),
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      // debug: (process.env.NODE_ENV === 'development' && true) || false,
+      // debug: true,
       playground: true,
       autoSchemaFile: true,
     }),
