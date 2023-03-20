@@ -20,4 +20,9 @@ export class Car {
   @Field()
   monthlyPrice: number;
 
+  @Column()
+  @Field()
+  mileage: string;
+
+
 }
