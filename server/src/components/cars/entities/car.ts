@@ -8,5 +8,9 @@ export class Car {
   @Field()
   id: string;
 
+  @Column()
+  @Field()
+  name: string;
+
 
 }
