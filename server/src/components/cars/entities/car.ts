@@ -12,5 +12,9 @@ export class Car {
   @Field()
   name: string;
 
+  @Column()
+  @Field()
+  dailyPrice: number;
+
 
 }
