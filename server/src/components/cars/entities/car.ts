@@ -24,5 +24,9 @@ export class Car {
   @Field()
   mileage: string;
 
+  @Column()
+  @Field()
+  gas: string;
+
 
 }
