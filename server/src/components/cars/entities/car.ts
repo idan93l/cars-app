@@ -16,5 +16,8 @@ export class Car {
   @Field()
   dailyPrice: number;
 
+  @Column()
+  @Field()
+  monthlyPrice: number;
 
 }
