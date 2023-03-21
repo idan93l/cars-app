@@ -7,7 +7,7 @@ export class CarsResolver {
   constructor(private carsService: CarService) {}
 
   @Query((returns) => {Car})
-  public async cars() {
-    return 'Hello and welcome to CaRent shop!';
+  public async cars(): Promise<Car[]> {
+    return await this.carsService.getAllCars();
   }
 }
