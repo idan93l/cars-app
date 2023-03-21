@@ -6,7 +6,7 @@ import { Car } from './entities/car';
 export class CarsResolver {
   constructor(private carsService: CarService) {}
 
-  @Query((returns) => {Car})
+  @Query((returns) => [Car])
   public async cars(): Promise<Car[]> {
     return await this.carsService.getAllCars();
   }
