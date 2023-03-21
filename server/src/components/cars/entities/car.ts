@@ -28,5 +28,9 @@ export class Car {
   @Field()
   gas: string;
 
+  @Column()
+  @Field()
+  gearType: string;
+
 
 }
