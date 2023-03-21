@@ -32,5 +32,7 @@ export class Car {
   @Field()
   gearType: string;
 
-
+  @Column()
+  @Field()
+  thumbnailUrl: string;
 }
