@@ -7,4 +7,7 @@ export class NewCarInput {
 
   @Field()
   monthlyPrice: number;
+
+  @Field()
+  dailyPrice: number;
 }
