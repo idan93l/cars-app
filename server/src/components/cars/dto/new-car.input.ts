@@ -4,4 +4,7 @@ import { Field, InputType } from '@nestjs/graphql';
 export class NewCarInput {
   @Field()
   name: string;
+
+  @Field()
+  monthlyPrice: string;
 }
