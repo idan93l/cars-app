@@ -6,5 +6,5 @@ export class NewCarInput {
   name: string;
 
   @Field()
-  monthlyPrice: string;
+  monthlyPrice: number;
 }
