@@ -1,4 +1,4 @@
-import { Resolver, Query } from '@nestjs/graphql';
+import { Resolver, Query, Mutation } from '@nestjs/graphql';
 import { CarService } from './cars.service';
 import { Car } from './entities/car';
 
@@ -11,5 +11,10 @@ export class CarsResolver {
     return await this.carsService.getAllCars().catch((err) => {
       throw err;
     });
+  }
+
+  @Mutation((returns) => Car)
+  public async addNewCar(): Promise<Car> {
+    
   }
 }

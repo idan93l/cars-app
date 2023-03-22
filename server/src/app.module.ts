@@ -6,6 +6,7 @@ import * as dotenv from 'dotenv';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { ComponentsModule } from './components/components.module';
+import { Car } from './components/cars/entities/car';
 dotenv.config();
 
 @Module({
@@ -17,8 +18,9 @@ dotenv.config();
       username: 'root',
       password: process.env.MYSQL_PASS,
       database: 'carent',
-      entities: [],
+      entities: [Car],
       synchronize: true,
+      // migrations: ['dist/migrations/*{.ts,.js}'],
     }),
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
