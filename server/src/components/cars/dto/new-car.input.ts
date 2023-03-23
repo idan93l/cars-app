@@ -16,4 +16,7 @@ export class NewCarInput {
 
   @Field()
   gas: string;
+
+  @Field()
+  gearType: string;
 }
