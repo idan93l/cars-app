@@ -5,7 +5,7 @@ export class NewCarInput {
   @Field()
   name: string;
 
-  @Field()
+  @Field({ nullable: true })
   monthlyPrice: number;
 
   @Field()
