@@ -10,4 +10,7 @@ export class NewCarInput {
 
   @Field()
   dailyPrice: number;
+
+  @Field()
+  mileage: string;
 }
