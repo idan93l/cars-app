@@ -19,4 +19,7 @@ export class NewCarInput {
 
   @Field()
   gearType: string;
+
+  @Field()
+  thumbnailUrl: string;
 }
