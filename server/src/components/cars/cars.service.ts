@@ -14,7 +14,11 @@ export class CarService {
   }
 
   public async addCar(newCarData: NewCarInput): Promise<Car> {
-    const newCar = this.carRepository.create()
-  }
+    const newCar = this.carRepository.create(newCarData);
+    await this.carRepository.save(newCar).catch((err) => {
+      new InternalServerErrorException();
+    });
 
+    return newCar;
+  }
 }
