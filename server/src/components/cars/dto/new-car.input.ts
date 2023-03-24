@@ -1,5 +1,6 @@
 import { Field, InputType, Int } from '@nestjs/graphql';
 import { Max } from 'class-validator';
+import { Min } from 'class-validator/types/decorator/decorators';
 
 @InputType()
 export class NewCarInput {
@@ -11,6 +12,7 @@ export class NewCarInput {
 
   @Field((type) => Int)
   @Max(1000)
+  @Min(10)
   dailyPrice: number;
 
   @Field()
