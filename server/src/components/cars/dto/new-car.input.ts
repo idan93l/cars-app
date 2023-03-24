@@ -8,6 +8,7 @@ export class NewCarInput {
   name: string;
 
   @Field((type) => Int)
+  @Max(20000)
   monthlyPrice: number;
 
   @Field((type) => Int)
