@@ -1,6 +1,5 @@
 import { Field, InputType, Int } from '@nestjs/graphql';
-import { Max } from 'class-validator';
-import { Min } from 'class-validator/types/decorator/decorators';
+import { Max, Min } from 'class-validator';
 
 @InputType()
 export class NewCarInput {
