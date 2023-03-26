@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { ICar } from "../../../typings/car";
@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css/bundle';
+import carsService from "../../services/carsService";
 
 const TopCarsContainer = styled.div`
   ${tw`
@@ -50,6 +51,13 @@ function TopCars() {
 
   // const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
+  const fetchTopCars = async () => {
+    const cars = await carsService.getCars().catch((err) => {
+      console.log("Error: ", err);
+    })
+    console.log("Cars: ", cars);
+  }
+
   const testCar: ICar = {
     name: "Audi S3 Car",
     mileage: "10k",
@@ -71,6 +79,11 @@ function TopCars() {
     gearType: "Auto",
     gas: "Petrol",
   };
+
+  useEffect(() => {
+    fetchTopCars();  
+  }, [])
+  
 
   return (
     <TopCarsContainer>
