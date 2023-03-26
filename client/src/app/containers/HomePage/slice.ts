@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { IHomePageState } from "./type";
 
 const initialState: IHomePageState = {
-  topCars: [];
+  topCars: [],
 }
 
 export const HomepageSlice = createSlice({

@@ -28,6 +28,7 @@
     "react-redux": "^8.0.5",
     "react-responsive": "^9.0.2",
     "react-scripts": "5.0.1",
+    "redux-logger": "^3.0.6",
     "styled-components": "^5.3.6",
     "swiper": "^9.1.0",
     "twin.macro": "^3.1.0",
