@@ -5,10 +5,13 @@ import { ICar } from "../../../typings/car";
 import Car from "../../components/car";
 import { SCREENS } from "../../components/responsive";
 import { useMediaQuery } from "react-responsive";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css/bundle';
+import "swiper/css/bundle";
 import carsService from "../../services/carsService";
+import { Dispatch } from "@reduxjs/toolkit";
+import { setTopCars } from "./slice";
+import { GetCars_cars } from "../../services/carsService/__generated__/GetCars";
 
 const TopCarsContainer = styled.div`
   ${tw`
@@ -46,6 +49,10 @@ const CarsContainer = styled.div`
   `}
 `;
 
+const actionDispatch = (dispatch: Dispatch) => ({
+  setTopCars: (cars: GetCars_cars[]) => dispatch(setTopCars(cars)),
+});
+
 function TopCars() {
   // const [current, setCurrent] = useState();
 
@@ -54,9 +61,9 @@ function TopCars() {
   const fetchTopCars = async () => {
     const cars = await carsService.getCars().catch((err) => {
       console.log("Error: ", err);
-    })
+    });
     console.log("Cars: ", cars);
-  }
+  };
 
   const testCar: ICar = {
     name: "Audi S3 Car",
@@ -81,9 +88,8 @@ function TopCars() {
   };
 
   useEffect(() => {
-    fetchTopCars();  
-  }, [])
-  
+    fetchTopCars();
+  }, []);
 
   return (
     <TopCarsContainer>
@@ -91,7 +97,7 @@ function TopCars() {
       <CarsContainer>
         <Swiper
           // style={{width: "89%", display: "flex", justifyContent: "center", alignItems: "center"}}
-          style={{width: "89%"}}
+          style={{ width: "89%" }}
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           navigation
           scrollbar={{ draggable: false }}
@@ -101,11 +107,11 @@ function TopCars() {
           breakpoints={{
             640: {
               width: 640,
-              slidesPerView: 1
+              slidesPerView: 1,
             },
             768: {
               width: 768,
-              slidesPerView: 2
+              slidesPerView: 2,
             },
             900: {
               width: 900,
@@ -113,12 +119,24 @@ function TopCars() {
             },
           }}
         >
-          <SwiperSlide><Car {...testCar}/></SwiperSlide>
-          <SwiperSlide><Car {...testCar2}/></SwiperSlide>
-          <SwiperSlide><Car {...testCar}/></SwiperSlide>
-          <SwiperSlide><Car {...testCar2}/></SwiperSlide>
-          <SwiperSlide><Car {...testCar}/></SwiperSlide>
-          <SwiperSlide><Car {...testCar2}/></SwiperSlide>
+          <SwiperSlide>
+            <Car {...testCar} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Car {...testCar2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Car {...testCar} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Car {...testCar2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Car {...testCar} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Car {...testCar2} />
+          </SwiperSlide>
         </Swiper>
       </CarsContainer>
     </TopCarsContainer>
