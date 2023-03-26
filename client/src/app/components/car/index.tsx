@@ -136,12 +136,12 @@ const RentButton = styled(Button)`
 `
 
 function Car(props: ICarProps) {
-  const {name, thumbnailSrc, dailyPrice, monthlyPrice, mileage, gearType, gas} = props;
+  const {name, thumbnailUrl, dailyPrice, monthlyPrice, mileage, gearType, gas} = props;
 
   return (
     <CarContainer>
       <CarThumbnail>
-        <img src={thumbnailSrc} alt="thumbnail" />
+        <img src={thumbnailUrl} alt="thumbnail" />
       </CarThumbnail>
       <CarName>{name}</CarName>
       <PricesContainer>

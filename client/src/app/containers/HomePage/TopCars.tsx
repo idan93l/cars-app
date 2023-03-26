@@ -9,10 +9,11 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import carsService from "../../services/carsService";
-import { Dispatch } from "@reduxjs/toolkit";
+import { createSelector, Dispatch } from "@reduxjs/toolkit";
 import { setTopCars } from "./slice";
 import { GetCars_cars } from "../../services/carsService/__generated__/GetCars";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { makeSelectTopCars } from "./selectors";
 
 const TopCarsContainer = styled.div`
   ${tw`
@@ -54,11 +55,16 @@ const actionDispatch = (dispatch: Dispatch) => ({
   setTopCars: (cars: GetCars_cars[]) => dispatch(setTopCars(cars)),
 });
 
+const stateSelector = createSelector(makeSelectTopCars, (topCars) => ({
+  topCars,
+}));
+
 function TopCars() {
   // const [current, setCurrent] = useState();
 
   // const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
+  const { topCars } = useSelector(stateSelector);
   const { setTopCars } = actionDispatch(useDispatch());
 
   const fetchTopCars = async () => {
@@ -67,28 +73,6 @@ function TopCars() {
     });
     console.log("Cars: ", cars);
     if (cars) setTopCars(cars);
-  };
-
-  const testCar: ICar = {
-    name: "Audi S3 Car",
-    mileage: "10k",
-    thumbnailSrc:
-      "https://cdn.jdpower.com/Models/640x480/2017-Audi-S3-PremiumPlus.jpg",
-    dailyPrice: 70,
-    monthlyPrice: 1600,
-    gearType: "Auto",
-    gas: "Petrol",
-  };
-
-  const testCar2: ICar = {
-    name: "HONDA cITY 5 Seater Car",
-    mileage: "20k",
-    thumbnailSrc:
-      "https://shinewiki.com/wp-content/uploads/2019/11/honda-city.jpg",
-    dailyPrice: 50,
-    monthlyPrice: 1500,
-    gearType: "Auto",
-    gas: "Petrol",
   };
 
   useEffect(() => {
@@ -123,24 +107,13 @@ function TopCars() {
             },
           }}
         >
-          <SwiperSlide>
-            <Car {...testCar} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Car {...testCar2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Car {...testCar} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Car {...testCar2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Car {...testCar} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Car {...testCar2} />
-          </SwiperSlide>
+          {topCars.map((car) => {
+            return (
+              <SwiperSlide>
+                <Car {...car} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </CarsContainer>
     </TopCarsContainer>
