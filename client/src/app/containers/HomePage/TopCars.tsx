@@ -12,6 +12,7 @@ import carsService from "../../services/carsService";
 import { Dispatch } from "@reduxjs/toolkit";
 import { setTopCars } from "./slice";
 import { GetCars_cars } from "../../services/carsService/__generated__/GetCars";
+import { useDispatch } from "react-redux";
 
 const TopCarsContainer = styled.div`
   ${tw`
@@ -58,11 +59,14 @@ function TopCars() {
 
   // const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
+  const { setTopCars } = actionDispatch(useDispatch());
+
   const fetchTopCars = async () => {
     const cars = await carsService.getCars().catch((err) => {
       console.log("Error: ", err);
     });
     console.log("Cars: ", cars);
+    if (cars) setTopCars(cars);
   };
 
   const testCar: ICar = {
